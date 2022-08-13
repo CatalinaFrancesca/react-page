@@ -4,14 +4,8 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
-import { Grid, makeStyles } from "@material-ui/core";
-
-const useStyles = makeStyles(() => ({
-  formControl: {
-    marginTop: 10,
-    minWidth: 220,
-  },
-}));
+import { Grid } from "@material-ui/core";
+import useStyles from './styles';
 
 const SelectTicket = () => {
   const [ticket, setTicket] = useState("");
@@ -23,8 +17,10 @@ const SelectTicket = () => {
 
   return (
     <Grid>
-      <FormControl component="fieldset" className={classes.formControl}>
-        <FormLabel component="legend">Choose your ticket</FormLabel>
+      <FormControl component="fieldset" className={classes.formControlTicket}>
+        <FormLabel component="legend">
+          Choose your ticket
+        </FormLabel>
         <RadioGroup
           row
           aria-label="ticket"

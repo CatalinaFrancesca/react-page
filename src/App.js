@@ -1,15 +1,16 @@
 import "./App.css";
-import React from "react";
-import Container from "@material-ui/core/Container";
+import React, { useEffect } from "react";
 import { ReserveTicket } from "./views/ReserveTicket";
 
 function App() {
+  useEffect(() => {
+    // 👇️ set style on body element
+    document.body.style.backgroundColor = "e4efd6";
+  }, []);
   return (
-    <Container>
       <div className="App">
         <ReserveTicket />
       </div>
-    </Container>
   );
 }
 
