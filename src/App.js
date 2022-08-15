@@ -4,7 +4,9 @@ import { ReserveTicket } from "./views/ReserveTicket";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Products from "./components/Products";
 import NavigationPage from "./components/NavigationPage";
-import ProductsList from "./components/ProductsList";
+import ProductsIndex from "./components/ProductsIndex";
+import Backstage from "./components/Backstage";
+import OrderPackage from "./components/OrderPackage";
 
 function App() {
   return (
@@ -14,9 +16,12 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<ReserveTicket />} />
-            <Route path="/products" element={<Products />}>
-              <Route path="/products" element={<ProductsList />} />
+            <Route path="/" element={<Products />}>
+              <Route path="/products" element={<ProductsIndex />} />
             </Route>
+            <Route path="/" element={<Backstage/>}>
+              <Route path="/backstage" element={<OrderPackage/>}/>
+              </Route>
             <Route path="*" element={<div>Page not found</div>} />
           </Routes>
         </div>

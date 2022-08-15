@@ -44,14 +44,34 @@ export default makeStyles(() => ({
     },
   },
 
-  products: {
-    width: "450px",
+  productsTitle: {
     marginTop: "25px",
-    alignContent: "center",
-    backgroundColor: "#ffe082",
+    textAlign: "center",
+    backgroundColor: "#dcedc8",
+    display:'flex',
+    flexDirection: "column",
+    fontSize:"30px",
   },
   productStyle: {
     display: "flex",
     flexDirection: "column",
   },
+  exchange: {
+    margin:"25px",
+    height: 300,
+    weight: 120,
+  },
+  productsGrid:{
+    fontSize:30,
+    fontFamily: 'Helvetica Neue',
+    fontStyle: 'italic',
+  },
+  backstageGrid:{
+    fontSize:30,
+   color: '#827717',
+   fontFamily:'"Segoe UI Symbol"',
+  },
+  button:{
+    margin:10,
+  }
 }));

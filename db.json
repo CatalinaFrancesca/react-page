@@ -74,8 +74,8 @@
     "products": [
       {
         "id": "cocaCola",
-       "name": "CocaCola",
-      "price": 5
+        "name": "CocaCola",
+        "price": 5
       },
       {
         "id": "wine",
