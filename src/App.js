@@ -7,6 +7,7 @@ import NavigationPage from "./components/NavigationPage";
 import ProductsIndex from "./components/ProductsIndex";
 import Backstage from "./components/Backstage";
 import OrderPackage from "./components/OrderPackage";
+import ProductEdit from "./components/ProductEdit";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<ReserveTicket />} />
             <Route path="/" element={<Products />}>
               <Route path="/products" element={<ProductsIndex />} />
+              <Route path="/products/:id" element={<ProductEdit />}/>
             </Route>
             <Route path="/" element={<Backstage/>}>
               <Route path="/backstage" element={<OrderPackage/>}/>

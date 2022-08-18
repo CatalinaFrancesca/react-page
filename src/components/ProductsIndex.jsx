@@ -24,6 +24,7 @@ const ProductsIndex = () => {
       {products.map((item) => (
         <div key={item.id}>{item.name}</div>
       ))}
+
       <Button
         className={classes.button}
         variant="contained"
